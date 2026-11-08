@@ -1,0 +1,98 @@
+// Sample deals used until the app is connected to a backend
+
+export const categories = ['All', 'Bakery', 'Restaurant', 'Café', 'Grocery'];
+
+export const deals = [
+  {
+    id: '1',
+    shop: 'Sunrise Bakery',
+    title: 'Bakery surprise bag',
+    category: 'Bakery',
+    price: 4.99,
+    originalPrice: 15.0,
+    bagsLeft: 3,
+    distance: '0.3 mi',
+    rating: 4.8,
+    reviews: 124,
+    pickupTime: '4:00–6:00 PM',
+    address: 'Perth, Western Australia',
+    heading: 'A little surprise, freshly baked',
+    description:
+      'A mix of 3–5 pastries and breads, baked today. Think buttery croissants, cinnamon rolls, or sourdough. Every bag is different.',
+    allergens: 'May contain gluten, dairy, eggs, and nuts. Ask the bakery about specific allergies.',
+    image: require('../../assets/images/bakery-bag.jpg'),
+    largeImage: require('../../assets/images/bakery-bag-large.jpg'),
+    thumbnail: require('../../assets/images/bakery-bag-square.jpg'),
+    mapPosition: { top: '58%', left: '36%' },
+  },
+  {
+    id: '2',
+    shop: 'Green Bowl Café',
+    title: 'Fresh bowl bag',
+    category: 'Café',
+    price: 5.99,
+    originalPrice: 18.0,
+    bagsLeft: 5,
+    distance: '0.5 mi',
+    rating: 4.7,
+    reviews: 86,
+    pickupTime: '5:00–7:00 PM',
+    address: 'Perth, Western Australia',
+    heading: 'Healthy bowls, made today',
+    description:
+      'Grain bowls and salads with fresh veggies, chickpeas and house dressing. Contents change daily depending on what is left.',
+    allergens: 'May contain sesame, nuts and dairy. Ask the café about specific allergies.',
+    image: require('../../assets/images/bowl-bag.jpg'),
+    largeImage: require('../../assets/images/bowl-bag-square.jpg'),
+    thumbnail: require('../../assets/images/bowl-bag-square.jpg'),
+    mapPosition: { top: '38%', left: '58%' },
+  },
+  {
+    id: '3',
+    shop: 'Spice Route Kitchen',
+    title: 'Dinner surprise bag',
+    category: 'Restaurant',
+    price: 6.99,
+    originalPrice: 21.0,
+    bagsLeft: 4,
+    distance: '0.7 mi',
+    rating: 4.9,
+    reviews: 152,
+    pickupTime: '7:00–9:00 PM',
+    address: 'Perth, Western Australia',
+    heading: 'A warm dinner, saved',
+    description:
+      'A hearty mix of curry, rice and naan from tonight’s menu. Enough for one big meal or two smaller ones.',
+    allergens: 'May contain gluten, dairy and nuts. Some dishes may be spicy.',
+    image: require('../../assets/images/spice-bag.jpg'),
+    largeImage: require('../../assets/images/spice-bag-square.jpg'),
+    thumbnail: require('../../assets/images/spice-bag-square.jpg'),
+    mapPosition: { top: '47%', left: '76%' },
+  },
+  {
+    id: '4',
+    shop: 'Sunrise Bakery',
+    title: 'Surprise Bread Bag',
+    category: 'Bakery',
+    price: 4.99,
+    originalPrice: 15.0,
+    bagsLeft: 6,
+    distance: '0.3 mi',
+    rating: 4.8,
+    reviews: 124,
+    pickupTime: '4:00–6:00 PM',
+    address: 'Perth, Western Australia',
+    heading: 'Fresh bread, baked today',
+    description:
+      'A mix of fresh sourdough, baguette pieces and rolls, baked today. Each bag has 3–5 items.',
+    allergens: 'Contains wheat; may contain dairy, eggs and nuts.',
+    image: require('../../assets/images/bread-bag.jpg'),
+    largeImage: require('../../assets/images/bread-bag.jpg'),
+    thumbnail: require('../../assets/images/bread-bag-square.jpg'),
+    mapPosition: { top: '30%', left: '14%' },
+  },
+];
+
+export function getDiscount(deal) {
+  return Math.round((1 - deal.price / deal.originalPrice) * 100);
+}
