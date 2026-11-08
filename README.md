@@ -58,6 +58,40 @@ Taken on an Android phone using Expo Go.
 - React Navigation (native stack and bottom tabs)
 - Expo vector icons (Ionicons)
 
+## Dependencies
+
+All packages are listed in `package.json` and get installed with `npm install`.
+
+| Package | Used for |
+|---|---|
+| `expo` | Expo framework and dev tools |
+| `react`, `react-native` | Building the app UI |
+| `@react-navigation/native` | Navigation container |
+| `@react-navigation/native-stack` | Stack navigation between screens |
+| `@react-navigation/bottom-tabs` | Bottom tab bar |
+| `react-native-screens` | Needed by React Navigation |
+| `react-native-safe-area-context` | Keeps content away from the notch and status bar |
+| `@expo/vector-icons` | Icons (Ionicons) |
+| `expo-font` | Loads the icon fonts |
+| `expo-status-bar` | Status bar style |
+
+## Current status
+
+**Milestone: Project 2 – UI implementation (done)**
+
+Working now:
+- 10 customer screens built from my Figma design
+- Full navigation flow: Splash → Onboarding → Login → Home tabs → Deal details → Reserved
+- Interactive features: clickable deal cards, search, category filter, favorites, show/hide password, email contact link, log out
+- Login checks for empty fields
+
+Not done yet (planned for next stage):
+- Restaurant partner screens (dashboard, add deal, manage deals, scan pickup code)
+- Real login and sign up (currently goes straight to Home)
+- Backend and database (currently uses mock data)
+- Real payments and a real scannable QR code
+- Real map with the user's location
+
 ## Project structure
 
 ```
