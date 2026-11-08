@@ -17,6 +17,30 @@ This is my ITC502 Mobile Development Project 2. The app is built with React Nati
 - Nearby map
 - Profile
 
+## Screenshots
+
+Taken on an Android phone using Expo Go.
+
+| Splash | Onboarding 1 | Onboarding 2 | Onboarding 3 |
+|---|---|---|---|
+| <img src="Screenshots/splash.png" width="180"> | <img src="Screenshots/onboarding-1.png" width="180"> | <img src="Screenshots/onboarding-2.png" width="180"> | <img src="Screenshots/onboarding-3.png" width="180"> |
+
+| Login | Login check | Home | Search |
+|---|---|---|---|
+| <img src="Screenshots/login.png" width="180"> | <img src="Screenshots/login-validation.png" width="180"> | <img src="Screenshots/home.png" width="180"> | <img src="Screenshots/home-search.png" width="180"> |
+
+| Category filter | Deal details | Reserved | Nearby map |
+|---|---|---|---|
+| <img src="Screenshots/home-filter.png" width="180"> | <img src="Screenshots/deal-details.png" width="180"> | <img src="Screenshots/reserved.png" width="180"> | <img src="Screenshots/map.png" width="180"> |
+
+| Active orders | Past orders | Favorites | Profile |
+|---|---|---|---|
+| <img src="Screenshots/orders-active.png" width="180"> | <img src="Screenshots/orders-past.png" width="180"> | <img src="Screenshots/favorites.png" width="180"> | <img src="Screenshots/profile.png" width="180"> |
+
+| Log out | Coming soon |
+|---|---|
+| <img src="Screenshots/logout.png" width="180"> | <img src="Screenshots/coming-soon.png" width="180"> |
+
 ## Features
 
 - Navigation with React Navigation (stack + bottom tabs)
